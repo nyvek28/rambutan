@@ -1,3 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors */
+  --black-color: #242424;
+  --salmon-color: #f08f80;
+  --white-color: white;
+  --pale-green-color: #98FB98;
+  --bone-white-color: #FFFDE4;
+
+  /* Background Color */
+  --light-background: var(--bone-white-color); 
+  --dark-background: var(--black-color);
+  --background: var(--light-background);
+  
+
+  /* Text Color */
+  --light-text-color: var(--white-color);
+  --dark-text-color: var(--black-color);
+  --text-color: var(--light-text-color);
+
+  /* Lengths */
+  --max-body-width: 900px;
+}
+
+.dark {
+  --text-color: var(--dark-text-color);
+  --background: var(--dark-background);
+}
+
 html,
 body {
   padding: 0;
